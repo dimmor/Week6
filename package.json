@@ -1,0 +1,35 @@
+{
+  "name": "week6",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node ./server.js"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.1",
+    "bootstrap": "^4.5.3",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "ejs": "~2.6.1",
+    "express": "~4.16.1",
+    "express-session": "^1.17.1",
+    "http-errors": "~1.6.3",
+    "jquery": "^3.5.1",
+    "mongoose": "^5.10.10",
+    "morgan": "~1.9.1",
+    "popper.js": "^1.16.1"
+  },
+  "description": "\"Week6\"",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dimmor/Week6.git"
+  },
+  "author": "Dmitriy Morozov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dimmor/Week6/issues"
+  },
+  "homepage": "https://github.com/dimmor/Week6#readme"
+}
