@@ -12,12 +12,6 @@ let passportLocal = require('passport-local');
 let localStrategy = passportLocal.Strategy;
 let flash = require('connect-flash');
 
-/*
-let passportJWT = require('passport-jwt');
-let JWTStrategy = passportJWT.Strategy;
-let ExtractJWT = passportJWT.ExtractJwt;
-*/
-
 //database setup
 let mongoose = require('mongoose');
 let DB = require('./db');
@@ -69,7 +63,12 @@ app.use(passport.session());
 let userModel = require('../models/user');
 let User = userModel.User;
 
-// 2)serialize and deserialize the User info
+
+// 2)implement a User Authentication Strategy
+passport.use(User.createStrategy());
+
+
+// 3)serialize and deserialize the User info
 passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
 

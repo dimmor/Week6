@@ -1,10 +1,13 @@
-<!-- login form-->
+<!-- login form--> 
+    
 <%- include ../partials/header.ejs %>
 
 <%- include ../partials/main_nav.ejs %>
 
-<main class="container">
+<main class="container">      
+
     <!-- Message Area -->
+    
     <% if(messages.length > 0) {%>
         <div class="alert alert-danger">
             <%= messages %>
@@ -28,7 +31,7 @@
                     name="password" placeholder="Enter password"
                     id="password" required>
                     or
-                    <a href="/register">Register Here</a>
+                    <a href="/register">Register Here</a>                    
                 </fieldset>
 
                 <fieldset class="form-group text-right">
@@ -47,3 +50,4 @@
 <%- include ../partials/bottom_nav.ejs %>  
 
 <%- include ../partials/footer.ejs %>
+
